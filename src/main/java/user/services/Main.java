@@ -10,6 +10,7 @@ public class Main {
     public static void main(String[] args) {
         Main main = new Main();
         User user = main.userDao.getById(1);
+
         System.out.println(user);
         System.out.println("Process completed successfully");
     }
