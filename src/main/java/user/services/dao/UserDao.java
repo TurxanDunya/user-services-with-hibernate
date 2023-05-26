@@ -31,9 +31,9 @@ public class UserDao {
                 transaction.rollback();
             }
         } finally {
-//            if (session != null) {
-//                session.close();
-//            }
+            if (session != null) {
+                session.close();
+            }
         }
 
         return user;
